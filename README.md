@@ -7,7 +7,7 @@ I am using beginner AWS labs to practice cloud fundamentals, AWS services, secur
 ## Goals
 
 - Build practical AWS experience
-- Document each lab clearly
+- Document each lab
 - Practice AWS CLI and cloud administration
 - Learn cloud security best practices
 - Build a GitHub portfolio for cloud and cybersecurity roles
@@ -16,4 +16,4 @@ I am using beginner AWS labs to practice cloud fundamentals, AWS services, secur
 
 | # | Lab | Status |
 |---|-----|--------|
-| 1 | AWS Account & CLI Setup | In Progress |
+| 1 | AWS Account & CLI Setup | Completed |
