@@ -14,6 +14,7 @@ Set up secure access to AWS and configure the AWS CLI for hands-on cloud practic
 
 - Created or accessed my AWS account
 - Enabled IAM Identity Center
+    - The modern, sercure way to manage who an access your account. Companies never allow you to login as root. Instead you create and log in as individual users with specific permissions.
 - Created a user for daily AWS access
 - Installed AWS CLI
 - Configured AWS CLI using SSO
