@@ -44,7 +44,5 @@ aws configure sso
 aws sts get-caller-identity --profile PROFILE-NAME
 ```
 
-## Issues/Fixes
-
-Issue:
-Fix: 
+## Troubleshooting 
+N/A
