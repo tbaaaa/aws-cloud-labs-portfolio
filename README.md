@@ -17,3 +17,4 @@ I am using beginner AWS labs to practice cloud fundamentals, AWS services, secur
 | # | Lab | Status |
 |---|-----|--------|
 | 1 | AWS Account & CLI Setup | Completed |
+| 2 | Cost Budget & SNS Alert | In Progress |
