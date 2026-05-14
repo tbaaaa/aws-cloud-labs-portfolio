@@ -26,4 +26,5 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 labs/
 ├── 01-aws-account-cli-setup/
 ├── 02-cost-budget-sns-alert/
+├── 03-s3-static-website/
 └── ...
