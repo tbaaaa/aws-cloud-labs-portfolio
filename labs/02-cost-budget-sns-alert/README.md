@@ -546,7 +546,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-1b
 
 | Screenshot | Description |
 |---|---|
-
 | `screenshots/email-subscription-confirmed.png` | Email subscription confirmed |
 | `screenshots/budget-json-created.png` | `budget.json` file created |
 | `screenshots/notifications-json-created.png` | `notifications.json` file created |
