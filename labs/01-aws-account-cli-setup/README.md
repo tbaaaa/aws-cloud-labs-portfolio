@@ -433,6 +433,6 @@ aws sts get-caller-identity
 | Screenshot | Description |
 |---|---|
 | `screenshots/aws-cli-version.png` | AWS CLI installed successfully |
-| `screenshots/sso-login-success.png` | SSO login completed successfully |
 | `screenshots/sts-caller-identity-redacted.png` | CLI identity verified with sensitive details redacted |
 | `screenshots/default-profile-validation.png` | CLI worked after setting the default AWS profile |
+| `screenshots/aws-management-console.png` | Logged in and visited the AWS Console |
