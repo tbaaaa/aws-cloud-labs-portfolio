@@ -18,7 +18,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 |---|---|---|---|
 | 1 | AWS Account & CLI Setup | AICloudFusion Lab 1A | Completed |
 | 2 | Cost Budget & SNS Alert | AICloudFusion Lab 1B | Completed |
-| 3 | S3 Static Website | AICloudFusion Lab 1C | Not Started |
+| 3 | S3 Static Website | AICloudFusion Lab 1C | In Progress |
 
 ## Repository Structure
 
