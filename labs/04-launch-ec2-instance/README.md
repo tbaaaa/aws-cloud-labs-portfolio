@@ -620,7 +620,34 @@ hostname -I
 
 ---
 
-### Step 20: Exit the Session
+### Step 15: Explore Linux File System Permissions
+
+**What I did:**
+
+- Used Session Manager to explore the EC2 instance file system.
+- Checked my current directory.
+- Navigated from `/usr/bin` to `/usr`.
+- Listed the contents of `/usr`.
+- Tried to create a test directory inside `/usr`.
+
+**Commands used inside EC2 session:**
+
+```bash
+pwd
+cd ..
+pwd
+ls -l
+mkdir testDir
+```
+
+**Result**
+mkdir: cannot create directory 'testDir': Permission denied
+
+**Screenshot**
+screenshots/permission-denied-ec2-instance-cli.png
+---
+
+### Step 21: Exit the Session
 
 **What I did:**
 
@@ -638,7 +665,7 @@ exit
 
 ---
 
-### Step 21: View Instance Details from CLI
+### Step 22: View Instance Details from CLI
 
 **What I did:**
 
@@ -691,7 +718,7 @@ aws ec2 describe-instances --instance-ids <YOUR_INSTANCE_ID> --region us-east-1 
 
 | Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| `mkdir testDir` returned `Permission denied` inside `/usr` | `/usr` is a protected system directory owned by `root`, and the current Session Manager user did not have write permission there | Use the home directory for normal files, such as `cd ~ && mkdir testDir`, or use `sudo` only when elevated permissions are required |
 
 ## Troubleshooting Notes
 
@@ -885,5 +912,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2a
 | `screenshots/os-release-output.png` | Amazon Linux 2023 verified |
 | `screenshots/memory-disk-user-checks.png` | Memory, disk, user, and private IP checked |
 | `screenshots/instance-details-cli.png` | Instance details displayed from CLI |
+| `screenshots/permission-denied-ec2-instance-cli.png` | Permission denied when creating a new directory |
 | `screenshots/instance-terminated.png` | EC2 instance terminated |
 | `screenshots/cleanup-verified.png` | IAM role/profile and EC2 cleanup verified |
