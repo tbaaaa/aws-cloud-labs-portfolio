@@ -620,7 +620,7 @@ hostname -I
 
 ---
 
-### Step 15: Explore Linux File System Permissions
+### Step 20: Explore Linux File System Permissions
 
 **What I did:**
 
@@ -640,11 +640,13 @@ ls -l
 mkdir testDir
 ```
 
-**Result**
-mkdir: cannot create directory 'testDir': Permission denied
+**Result:**
 
-**Screenshot**
-screenshots/permission-denied-ec2-instance-cli.png
+- mkdir: cannot create directory 'testDir': Permission denied
+
+**Screenshot:**
+
+- screenshots/permission-denied-ec2-instance-cli.png
 ---
 
 ### Step 21: Exit the Session
