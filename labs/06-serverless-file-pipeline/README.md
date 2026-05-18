@@ -819,7 +819,9 @@ aws s3 ls s3://<YOUR_OUTPUT_BUCKET>/
 
 | Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| Lambda Function URL returned `403 Forbidden` | The Function URL had `AuthType: NONE`, but the Lambda resource-based policy did not include all required public invoke permissions | Added an additional permission for `lambda:InvokeFunction` using `--invoked-via-function-url` |
+| Upload failed with `405 Method Not Allowed` | The upload flow broke because the browser could not get a valid presigned URL from Lambda. The browser then attempted to send a `PUT` request to the S3 static website endpoint, which does not allow uploads | Fixed the Lambda Function URL permission issue, then confirmed the upload used the presigned S3 URL instead of the website endpoint |
+
 
 ## Troubleshooting Notes
 
@@ -833,6 +835,9 @@ aws s3 ls s3://<YOUR_OUTPUT_BUCKET>/
 | Lambda function creation fails | IAM role ARN, zip file, or handler name is wrong | Verify role ARN, file names, zip files, and handler values |
 | `NoSuchBucket` | Bucket name was typed incorrectly | Check bucket names with `aws s3 ls` |
 | Browser CORS error | Required service does not allow cross-origin browser calls | Check CORS on Lambda Function URL, input bucket, and output bucket |
+| `403 Forbidden` from Lambda Function URL | The request was blocked before the Lambda code ran | Tested the Function URL directly in PowerShell with `Invoke-WebRequest` |
+| `405 Method Not Allowed` from S3 website endpoint | The browser was sending `PUT` to the wrong endpoint | Checked DevTools Network tab and saw the request going to `s3-website-us-east-1.amazonaws.com` |
+| Upload request does not go to input bucket | The frontend did not receive or use a valid presigned URL | Checked whether the Lambda response included `uploadUrl` |
 
 ## Cleanup
 
@@ -991,8 +996,10 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2c
 | `screenshots/three-s3-buckets-created.png` | Website, input, and output buckets created |
 | `screenshots/lambda-role-created.png` | IAM role for Lambda created |
 | `screenshots/lambda-policies-attached.png` | S3 and CloudWatch permissions attached |
-| `screenshots/presign-function-created.png` | Presign Lambda function created |
-| `screenshots/processor-function-created.png` | Processing Lambda function created |
+| `screenshots/presign-function-created-cli.png` | Presign Lambda function created in CLI|
+| `screenshots/presign-function-created-aws-console.png` | Presign Lambda function viewed in AWS Console|
+| `screenshots/processor-function-created-cli.png` | Processing Lambda function created in CLI|
+| `screenshots/processor-function-created-aws-console.png` | Processing Lambda function viewed in AWS Console|
 | `screenshots/function-url-created.png` | Lambda Function URL created |
 | `screenshots/s3-trigger-configured.png` | Input bucket event trigger configured |
 | `screenshots/cors-configured.png` | CORS applied to buckets |
@@ -1001,6 +1008,8 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2c
 | `screenshots/website-loaded.png` | Cloud File Processor website loaded |
 | `screenshots/file-uploaded.png` | Text file uploaded through the website |
 | `screenshots/processed-result-displayed.png` | Processed uppercase result displayed |
-| `screenshots/input-output-buckets-verified.png` | Input and output files verified in S3 |
+| `screenshots/input-bucket-file-verified.png` | Input File verified in S3 |
+| `screenshots/output-bucket-file-verified.png` | Output File verified in S3 |
 | `screenshots/cloudwatch-logs-reviewed.png` | Lambda logs reviewed in CloudWatch |
-| `screenshots/cleanup-verified.png` | Lab resources cleaned up |
+| `screenshots/cleanup-verified-1.png` | Lab resources cleaned up |
+| `screenshots/cleanup-verified-2.png` | Lab resources cleaned up |
