@@ -1013,6 +1013,13 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2b
 | IAM role | Deleted | Yes |
 | Local lab folder | Deleted | Yes |
 
+## Production Improvement: Least Privilege S3 Policy
+
+The lab uses the AWS managed policy `AmazonS3FullAccess` to keep the exercise simple. This is regarded as acceptable for a beginner lab, but it gives broader S3 permissions than needed.
+
+It is said that a more secure production approach would be to create a custom IAM policy that only allows access to the specific lab bucket.
+
+
 ## What I Learned
 
 - IAM roles are the secure way to give EC2 instances access to AWS services.
@@ -1021,14 +1028,13 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2b
 - The EC2 instance can use temporary credentials from the attached IAM role.
 - S3 can act as shared storage between a local computer and a cloud server.
 - Session Manager allows EC2 access without SSH keys or open inbound ports.
-- Managed policies are convenient for labs, but production environments should use least privilege custom policies.
+- `AmazonS3FullAccess` is useful for a beginner lab, but production environments should use least privilege.
 - Cleanup is important because EC2 and S3 resources can create charges if left running.
 
 ## Screenshots
 
 | Screenshot | Description |
 |---|---|
-| `screenshots/sts-caller-identity-redacted.png` | AWS CLI identity verified with sensitive details redacted |
 | `screenshots/s3-bucket-created.png` | S3 bucket created successfully |
 | `screenshots/ami-id-retrieved.png` | Latest Amazon Linux 2023 AMI ID retrieved |
 | `screenshots/trust-policy-file-created.png` | `ec2-trust-policy.json` created locally |
