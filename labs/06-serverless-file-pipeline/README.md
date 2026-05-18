@@ -1010,6 +1010,5 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-2c
 | `screenshots/processed-result-displayed.png` | Processed uppercase result displayed |
 | `screenshots/input-bucket-file-verified.png` | Input File verified in S3 |
 | `screenshots/output-bucket-file-verified.png` | Output File verified in S3 |
-| `screenshots/cloudwatch-logs-reviewed.png` | Lambda logs reviewed in CloudWatch |
 | `screenshots/cleanup-verified-1.png` | Lab resources cleaned up |
 | `screenshots/cleanup-verified-2.png` | Lab resources cleaned up |
