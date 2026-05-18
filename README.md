@@ -20,7 +20,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 2 | Cost Budget & SNS Alert | AICloudFusion Lab 1B | Completed |
 | 3 | S3 Static Website | AICloudFusion Lab 1C | Completed |
 | 4 | Launch EC2 Instance | AICloudFusion Lab 2A | Completed |
-| 5 | EC2 S3 IAM Role | AICloudFusion Lab 2B | In Progress |
+| 5 | EC2 S3 IAM Role | AICloudFusion Lab 2B | Completed |
 
 ## Repository Structure
 
@@ -30,4 +30,5 @@ labs/
 ├── 02-cost-budget-sns-alert/
 ├── 03-s3-static-website/
 ├── 04-launch-ec2-instance/
+├── 05-ec2-s3-iam-role/
 └── ...
