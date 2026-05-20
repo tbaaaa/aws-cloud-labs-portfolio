@@ -23,7 +23,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 5 | EC2 S3 IAM Role | AICloudFusion Lab 2B | Completed |
 | 6 | Serverless File Pipeline | AICloudFusion Lab 2C | Completed |
 | 7 | IAM Least Privilege | AICloudFusion Lab 3A | Completed |
-| 8 | IAM Groups, Custom Policies & MFA | AICloudFusion Lab 3B | In Progress |
+| 8 | IAM Groups, Custom Policies & MFA | AICloudFusion Lab 3B | Completed |
 
 ## Repository Structure
 

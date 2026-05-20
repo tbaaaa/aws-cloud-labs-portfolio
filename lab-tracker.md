@@ -9,4 +9,4 @@
 | 2026-05-18 | EC2 S3 IAM Role | Lab 2B | Completed | Using an IAM role to allow EC2 to upload and download files from S3 |
 | 2026-05-18 | Serverless File Pipeline | Lab 2C | Completed | Building a serverless web app using S3, Lambda, presigned URLs, CORS, and S3 event triggers |
 | 2026-05-20 | IAM Least Privilege | Lab 3A | Completed | Creating a read-only IAM user and testing least privilege access to one S3 bucket |
-| 2026-05-20 | IAM Groups, Custom Policies & MFA | Lab 3B | In Progress | Creating an IAM group, applying a custom policy with explicit Deny, testing inherited permissions, and enabling root MFA |
+| 2026-05-20 | IAM Groups, Custom Policies & MFA | Lab 3B | Completed | Creating an IAM group, applying a custom policy with explicit Deny, testing inherited permissions, and enabling root MFA |
