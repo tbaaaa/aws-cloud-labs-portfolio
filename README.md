@@ -22,7 +22,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 4 | Launch EC2 Instance | AICloudFusion Lab 2A | Completed |
 | 5 | EC2 S3 IAM Role | AICloudFusion Lab 2B | Completed |
 | 6 | Serverless File Pipeline | AICloudFusion Lab 2C | Completed |
-| 7 | IAM Least Privilege | AICloudFusion Lab 3A | In Progress |
+| 7 | IAM Least Privilege | AICloudFusion Lab 3A | Completed |
 
 ## Repository Structure
 
@@ -34,5 +34,5 @@ labs/
 ├── 04-launch-ec2-instance/
 ├── 05-ec2-s3-iam-role/
 ├── 06-serverless-file-pipeline/
-├── 07-iam-least-privilege
+├── 07-iam-least-privilege/
 └── ...
