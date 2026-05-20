@@ -608,7 +608,7 @@ aws sts get-caller-identity
 
 | Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| `Error when retrieving token from sso: Token has expired and refresh failed` after switching back to admin credentials | The admin AWS CLI profile uses IAM Identity Center/SSO. While testing the restricted IAM user, the cached SSO token expired, so AWS CLI could not refresh the admin session automatically. | Ran `aws sso login --profile <YOUR_PROFILE_NAME>` to renew the SSO session, restored `$env:AWS_PROFILE`, then verified the admin identity with `aws sts get-caller-identity`. |
 
 ## Troubleshooting Notes
 
@@ -621,6 +621,7 @@ aws sts get-caller-identity
 | `AccessDenied` during list/read test | Policy is missing `s3:ListBucket` or `s3:GetObject`, or bucket ARN is wrong | Review the policy and confirm the bucket name is correct |
 | Write/delete test does not show `AccessDenied` clearly | Error output may not be redirected | Use `2>&1` at the end of the command |
 | `NoSuchBucket` | Bucket name was typed incorrectly or deleted | Confirm the bucket name with `aws s3 ls` |
+| SSO token expired after switching back to admin | The cached IAM Identity Center token expired while using the restricted IAM user credentials | Run `aws sso login --profile <YOUR_PROFILE_NAME>`, then run `aws sts get-caller-identity` again |
 
 ## Cleanup
 
@@ -789,12 +790,14 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-3a
 - Access keys are powerful and should be protected, avoided when possible, and deleted when no longer needed.
 - Environment variables can temporarily change which AWS identity the CLI uses.
 - It is important to confirm identity with `aws sts get-caller-identity` before testing or cleaning up.
+- IAM Identity Center/SSO sessions are temporary and can expire during a lab.
+- If the AWS CLI says the SSO token expired, I need to renew the session with `aws sso login --profile <PROFILE_NAME>`.
+- `aws sts get-caller-identity` is useful for confirming whether the CLI is using the admin profile or the restricted IAM user.
 
 ## Screenshots
 
 | Screenshot | Description |
 |---|---|
-| `screenshots/admin-identity-verified.png` | AWS CLI admin identity verified |
 | `screenshots/project-folder-created.png` | Local lab folder created |
 | `screenshots/s3-bucket-created.png` | S3 bucket created successfully |
 | `screenshots/test-file-uploaded.png` | Test file uploaded to S3 |
@@ -807,6 +810,7 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-3a
 | `screenshots/read-access-success.png` | Restricted user successfully read test file |
 | `screenshots/write-access-denied.png` | Restricted user denied when trying to upload |
 | `screenshots/delete-access-denied.png` | Restricted user denied when trying to delete |
+| `screenshots/sso-token-expired.png` | Cached SSO token has expired when switching back |
 | `screenshots/admin-profile-restored.png` | CLI switched back to admin profile |
 | `screenshots/iam-console-policy-check.png` | IAM user and inline policy verified in AWS Console |
 | `screenshots/cleanup-verified.png` | Lab resources cleaned up |
