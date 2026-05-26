@@ -1167,4 +1167,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-3c
 | `screenshots/auditor-cloudtrail-lookup.png` | Auditor successfully queried CloudTrail events |
 | `screenshots/auditor-iam-denied.png` | Auditor denied when attempting IAM user creation |
 | `screenshots/cloudtrail-event-history.png` | CloudTrail Event history reviewed in the console |
-| `screenshots/cleanup-verified.png` | Temporary lab resources cleaned up |
+| `screenshots/cleanup-verified-1.png` | Temporary lab resources cleaned up |
+| `screenshots/cleanup-verified-2.png` | Temporary lab resources cleaned up |
+| `screenshots/cleanup-verified-3.png` | Temporary lab resources cleaned up |
