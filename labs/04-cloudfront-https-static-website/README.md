@@ -740,7 +740,7 @@ To use a custom domain such as `www.myportfolio.com`, I would need:
 
 ## Issues Encountered
 
-|| Issue | Cause | Fix |
+| Issue | Cause | Fix |
 |---|---|---|
 | CloudFront `update-distribution` failed with `Expected: '=', received: 'ÿ'` | The `current-dist-config.json` file was saved as UTF-16LE because Windows PowerShell redirection created the file with that encoding. AWS CLI could not parse the hidden characters at the start of the JSON file. | Re-saved/recreated the distribution config as UTF-8 without BOM, then reran the CloudFront `update-distribution` command. |
 | CloudFront `update-distribution` failed again with `Expected: '=', received: 'ï'` | The file was converted to UTF-8, but it still included a BOM marker. AWS CLI still could not parse the hidden BOM characters before the opening `{`. | Rewrote the JSON file as UTF-8 without BOM using PowerShell/.NET, then updated the distribution successfully. |
