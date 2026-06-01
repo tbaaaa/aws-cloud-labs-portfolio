@@ -740,9 +740,10 @@ To use a custom domain such as `www.myportfolio.com`, I would need:
 
 ## Issues Encountered
 
-| Issue | Cause | Fix |
+|| Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| CloudFront `update-distribution` failed with `Expected: '=', received: 'ÿ'` | The `current-dist-config.json` file was saved as UTF-16LE because Windows PowerShell redirection created the file with that encoding. AWS CLI could not parse the hidden characters at the start of the JSON file. | Re-saved/recreated the distribution config as UTF-8 without BOM, then reran the CloudFront `update-distribution` command. |
+| CloudFront `update-distribution` failed again with `Expected: '=', received: 'ï'` | The file was converted to UTF-8, but it still included a BOM marker. AWS CLI still could not parse the hidden BOM characters before the opening `{`. | Rewrote the JSON file as UTF-8 without BOM using PowerShell/.NET, then updated the distribution successfully. |
 
 ## Troubleshooting Notes
 
@@ -755,6 +756,9 @@ To use a custom domain such as `www.myportfolio.com`, I would need:
 | Old S3 URL still works | Public access may not be fully blocked | Re-run the Block Public Access command and check bucket policy |
 | Distribution stuck on `InProgress` | CloudFront propagation delay | Wait longer and check the CloudFront console |
 | `MalformedXML` or `InvalidArgument` | JSON file has a syntax error or placeholder was not replaced | Recheck the JSON file carefully |
+| `Expected: '=', received: 'ÿ'` when using `--distribution-config file://...` | The JSON file is likely saved as UTF-16LE | Rewrite the file as UTF-8 without BOM before running the AWS CLI command |
+| `Expected: '=', received: 'ï'` when using `--distribution-config file://...` | The JSON file is likely saved as UTF-8 with BOM | Remove the BOM and save the file as UTF-8 without BOM |
+| CloudFront config JSON looks correct but AWS CLI cannot parse it | The issue may be hidden file encoding characters, not the JSON content | Check the first bytes of the file and regenerate it as UTF-8 without BOM |
 
 ## Cleanup
 
@@ -821,7 +825,60 @@ aws cloudfront update-distribution --id <YOUR_DIST_ID> --distribution-config fil
 
 **Result:**
 
-- Distribution disable process started.
+- Distribution disable process did not start.
+
+### Encoding Issue During Distribution Update (First Fix Attempt)
+
+While disabling the CloudFront distribution, I ran into an AWS CLI parsing error when using the local `current-dist-config.json` file.
+
+The first error showed:
+
+```text
+Expected: '=', received: 'ÿþ' (UTF-16LE)
+```
+
+**What I did:**
+```bash
+Get-Content .\current-dist-config.json | Set-Content .\current-dist-config-utf8.json -Encoding utf8
+aws cloudfront update-distribution `
+  --id <YOUR_DISTRIBUTION_ID> `
+  --distribution-config file://current-dist-config-utf8.json `
+  --if-match <YOUR_ETAG>
+```
+
+**Result:**
+- Problem persisted with encoding problem.
+
+### Encoding Issue During Distribution Update (Second Fix Attempt)
+
+It was later found out that the first hidden character had changed again.
+
+Similar to the first error, it showed:
+
+```text
+Expected: '=', received: 'ï»¿' (UTF-8 with BOM)
+```
+
+**What I did**
+```bash
+$raw = Get-Content .\current-dist-config.json -Raw
+$raw = $raw.TrimStart([char]0xFEFF)
+
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText(
+    (Join-Path (Get-Location) "current-dist-config-nobom.json"),
+    $raw,
+    $utf8NoBom
+)
+aws cloudfront update-distribution `
+  --id <YOUR_DISTRIBUTION_ID> `
+  --distribution-config file://current-dist-config-nobom.json `
+  --if-match <YOUR_ETAG>
+```
+
+**Result**
+- Problem was rectified.
+- Distribution disable process started successfully.
 
 ---
 
@@ -919,6 +976,12 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-1d
 - CloudFront deployments take time because configuration must propagate globally.
 - Custom domains require a registered domain, DNS records, and an ACM certificate in `us-east-1`.
 - CloudFront resources require a careful cleanup process because distributions must be disabled before deletion.
+- AWS CLI JSON input files must be saved in a format the CLI can parse correctly.
+- Windows PowerShell redirection can create files with encoding markers that break AWS CLI JSON parsing.
+- The errors `Expected: '=', received: 'ÿ'` and `Expected: '=', received: 'ï'` can indicate hidden encoding characters at the start of the file.
+- UTF-16LE and UTF-8 with BOM can both cause parsing issues with AWS CLI input files.
+- Saving the CloudFront distribution config as UTF-8 without BOM fixed the issue.
+- The JSON content was valid; the problem was the file encoding.
 
 ## Screenshots
 
@@ -933,7 +996,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-1d
 | `screenshots/block-public-access-enabled.png` | S3 Block Public Access re-enabled |
 | `screenshots/cloudfront-origin-oac.png` | CloudFront origin using OAC |
 | `screenshots/https-website-loaded.png` | Website loaded using HTTPS CloudFront URL |
-| `screenshots/http-redirect-to-https.png` | HTTP redirected to HTTPS |
 | `screenshots/old-s3-url-blocked.png` | Old S3 website endpoint blocked |
 | `screenshots/custom-error-page.png` | Custom error page loaded through CloudFront |
 | `screenshots/cleanup-verified.png` | CloudFront/OAC cleanup verified |
