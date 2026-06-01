@@ -999,3 +999,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-1d
 | `screenshots/old-s3-url-blocked.png` | Old S3 website endpoint blocked |
 | `screenshots/custom-error-page.png` | Custom error page loaded through CloudFront |
 | `screenshots/cleanup-verified.png` | CloudFront/OAC cleanup verified |
+| `screenshots/encoding-issue-1.png` | Encoding Issue during Distribution Update |
+| `screenshots/encoding-issue-2.png` | Encoding Issue during Distribution Update |
+| `screenshots/encoding-issue-workaround.png` | Workaround for Encoding Issue during Distribution Update |
