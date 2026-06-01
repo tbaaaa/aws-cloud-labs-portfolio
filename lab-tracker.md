@@ -11,3 +11,4 @@
 | 2026-05-20 | IAM Least Privilege | Lab 3A | Completed | Creating a read-only IAM user and testing least privilege access to one S3 bucket |
 | 2026-05-20 | IAM Groups, Custom Policies & MFA | Lab 3B | Completed | Creating an IAM group, applying a custom policy with explicit Deny, testing inherited permissions, and enabling root MFA |
 | 2026-05-26 | Roles, CloudTrail & Audit Logging | Lab 3C | Completed | Creating CloudTrail audit logging, developer/auditor roles, and testing separation of duties |
+| 2026-06-01 | CloudFront HTTPS Static Website | Side Quest Lab 1D | In Progress | Adding CloudFront HTTPS and OAC to secure an S3 static website |
