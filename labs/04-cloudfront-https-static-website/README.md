@@ -840,6 +840,7 @@ Expected: '=', received: 'ÿþ' (UTF-16LE)
 **What I did:**
 ```bash
 Get-Content .\current-dist-config.json | Set-Content .\current-dist-config-utf8.json -Encoding utf8
+
 aws cloudfront update-distribution `
   --id <YOUR_DISTRIBUTION_ID> `
   --distribution-config file://current-dist-config-utf8.json `
@@ -870,6 +871,7 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding $false
     $raw,
     $utf8NoBom
 )
+
 aws cloudfront update-distribution `
   --id <YOUR_DISTRIBUTION_ID> `
   --distribution-config file://current-dist-config-nobom.json `
