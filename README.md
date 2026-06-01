@@ -19,7 +19,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 1 | AWS Account & CLI Setup | AICloudFusion Lab 1A | Completed |
 | 2 | Cost Budget & SNS Alert | AICloudFusion Lab 1B | Completed |
 | 3 | S3 Static Website | AICloudFusion Lab 1C | Completed |
-| 4 | CloudFront HTTPS Static Website | AICloudFusion Side Quest Lab 1D | In Progress |
+| 4 | CloudFront HTTPS Static Website | AICloudFusion Side Quest Lab 1D | Completed |
 | 5 | Launch EC2 Instance | AICloudFusion Lab 2A | Completed |
 | 6 | EC2 S3 IAM Role | AICloudFusion Lab 2B | Completed |
 | 7 | Serverless File Pipeline | AICloudFusion Lab 2C | Completed |
