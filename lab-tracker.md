@@ -12,4 +12,4 @@
 | 2026-05-20 | IAM Groups, Custom Policies & MFA | Lab 3B | Completed | Creating an IAM group, applying a custom policy with explicit Deny, testing inherited permissions, and enabling root MFA |
 | 2026-05-26 | Roles, CloudTrail & Audit Logging | Lab 3C | Completed | Creating CloudTrail audit logging, developer/auditor roles, and testing separation of duties |
 | 2026-06-01 | CloudFront HTTPS Static Website | Side Quest Lab 1D | Completed | Adding CloudFront HTTPS and OAC to secure an S3 static website |
-| 2026-06-02 | GuardDuty Findings | Lab 4A | In Progress | Enabling GuardDuty, generating sample findings, reviewing severity levels, and cleaning up the detector |
+| 2026-06-02 | GuardDuty Findings | Lab 4A | Completed | Enabling GuardDuty, generating sample findings, reviewing severity levels, and cleaning up the detector |
