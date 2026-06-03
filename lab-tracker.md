@@ -13,4 +13,4 @@
 | 2026-05-26 | Roles, CloudTrail & Audit Logging | Lab 3C | Completed | Creating CloudTrail audit logging, developer/auditor roles, and testing separation of duties |
 | 2026-06-01 | CloudFront HTTPS Static Website | Side Quest Lab 1D | Completed | Adding CloudFront HTTPS and OAC to secure an S3 static website |
 | 2026-06-02 | GuardDuty Findings | Lab 4A | Completed | Enabling GuardDuty, generating sample findings, reviewing severity levels, and cleaning up the detector |
-| 2026-06-03 | CloudTrail Investigation | Lab 4B | In Progress | Creating CloudTrail audit logs, simulating suspicious IAM/S3 activity, and investigating deleted activity with lookup-events |
+| 2026-06-03 | CloudTrail Investigation | Lab 4B | Completed | Creating CloudTrail audit logs, simulating suspicious IAM/S3 activity, and investigating deleted activity with lookup-events |
