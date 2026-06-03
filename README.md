@@ -27,6 +27,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 9 | IAM Groups, Custom Policies & MFA | AICloudFusion Lab 3B | Completed |
 | 10 | Roles, CloudTrail & Audit Logging | AICloudFusion Lab 3C | Completed |
 | 11 | GuardDuty Findings | AICloudFusion Lab 4A | Completed |
+| 12 | CloudTrail Investigation | AICloudFusion Lab 4B | In Progress |
 
 ## Repository Structure
 
@@ -43,4 +44,5 @@ labs/
 ├── 09-iam-groups-custom-policy-mfa/
 ├── 10-roles-cloudtrail-audit/
 ├── 11-guardduty-findings/
+├── 12-cloudtrail-investigation/
 └── ...
