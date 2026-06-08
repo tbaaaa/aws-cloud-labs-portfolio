@@ -15,3 +15,4 @@
 | 2026-06-02 | GuardDuty Findings | Lab 4A | Completed | Enabling GuardDuty, generating sample findings, reviewing severity levels, and cleaning up the detector |
 | 2026-06-03 | CloudTrail Investigation | Lab 4B | Completed | Creating CloudTrail audit logs, simulating suspicious IAM/S3 activity, and investigating deleted activity with lookup-events |
 | 2026-06-04 | Automated Security Alerts | Lab 4C | Completed | Building an automated GuardDuty alert pipeline using EventBridge and SNS email notifications |
+| 2026-06-08 | Credential Revocation | Lab 5A | In Progress | Simulating a compromised AWS access key, deactivating it for containment, testing failed authentication, and deleting it permanently |

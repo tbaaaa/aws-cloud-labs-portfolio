@@ -29,6 +29,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 11 | GuardDuty Findings | AICloudFusion Lab 4A | Completed |
 | 12 | CloudTrail Investigation | AICloudFusion Lab 4B | Completed |
 | 13 | Automated Security Alerts | AICloudFusion Lab 4C | Completed |
+| 14 | Credential Revocation | AICloudFusion Lab 5A | In Progress |
 
 ## Repository Structure
 
@@ -47,4 +48,5 @@ labs/
 ├── 11-guardduty-findings/
 ├── 12-cloudtrail-investigation/
 ├── 13-automated-security-alerts/
+├── 14-credential-revocation/
 └── ...
