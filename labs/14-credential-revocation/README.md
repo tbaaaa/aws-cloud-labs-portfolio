@@ -1,4 +1,4 @@
-# Lab 13: Credential Revocation
+# Lab 14: Credential Revocation
 
 ## Lab Summary
 
