@@ -1269,7 +1269,8 @@ The incident report should include:
 | `screenshots/project-folder-created.png` | Local project folder created |
 | `screenshots/evidence-bucket-created.png` | S3 evidence bucket created |
 | `screenshots/cloudtrail-log-bucket-created.png` | CloudTrail logging bucket created |
-| `screenshots/trail-policy-created.png` | CloudTrail bucket policy file created |
+| `screenshots/trail-policy-created-1.png` | CloudTrail bucket policy file created |
+| `screenshots/trail-policy-created-2.png` | CloudTrail bucket policy file created |
 | `screenshots/cloudwatch-log-group-created.png` | CloudWatch log group created |
 | `screenshots/cloudtrail-role-created.png` | IAM role for CloudTrail created |
 | `screenshots/cloudtrail-trail-created.png` | CloudTrail trail created |
@@ -1290,4 +1291,5 @@ The incident report should include:
 | `screenshots/key-deactivated.png` | Attacker key deactivated |
 | `screenshots/attacker-deleted.png` | Attacker user and credentials removed |
 | `screenshots/incident-report-created.png` | Incident report created |
-| `screenshots/cleanup-verified.png` | Lab cleanup verified |
+| `screenshots/cleanup-verified-1.png` | Lab cleanup verified |
+| `screenshots/cleanup-verified-2.png` | Lab cleanup verified |
