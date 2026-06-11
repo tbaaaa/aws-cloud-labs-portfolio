@@ -1,44 +1,30 @@
-\# Incident Report
+# Incident Report
 
-
-
-\## Incident Summary
-
-
+## Incident Summary
 
 | Field | Value |
 
 |-------|-------|
 
-| \*\*Incident ID\*\* | IR-2026-001 |
+| **Incident ID** | IR-2026-001 |
 
-| \*\*Date Detected\*\* | 2026-06-11 |
+| **Date Detected** | 2026-06-11 |
 
-| \*\*Severity\*\* | High |
+| **Severity** | High |
 
-| \*\*Status\*\* | Resolved |
+| **Status** | Resolved |
 
-| \*\*Reported By\*\* | Ayden |
+| **Reported By** | Ayden |
 
-| \*\*Compromised Identity\*\* | attacker-simulation / AKIA56R3F7MWGDKVXG67 |
+| **Compromised Identity** | attacker-simulation / AKIA56R3F7MWGDKVXG67 |
 
+## Detection
 
-
-\## Detection
-
-
-
-\*\*How was the incident discovered?\*\*
-
-
+**How was the incident discovered?**
 
 Automated GuardDuty alert for unusual API activity from IAM user attacker-simulation.
 
-
-
-\## Timeline of Events
-
-
+## Timeline of Events
 
 | Time (UTC) | Event | Details | Evidence Source |
 
@@ -58,11 +44,7 @@ Automated GuardDuty alert for unusual API activity from IAM user attacker-simula
 
 | 17:07:10 | Eradication | attacker-simulation user and all credentials deleted | Responder action |
 
-
-
-\## Affected Resources
-
-
+## Affected Resources
 
 | Resource | Type | Impact |
 
@@ -74,15 +56,9 @@ Automated GuardDuty alert for unusual API activity from IAM user attacker-simula
 
 | attacker-simulation | IAM User | Unauthorized user with S3 read access; now deleted |
 
+## Key Forensic Evidence
 
-
-\## Key Forensic Evidence
-
-
-
-\*\*GetObject event (data exfiltration — from CloudWatch Logs Insights):\*\*
-
-
+**GetObject event (data exfiltration — from CloudWatch Logs Insights):**
 
 | Field | Value |
 
@@ -102,49 +78,32 @@ Automated GuardDuty alert for unusual API activity from IAM user attacker-simula
 
 | Object Key | sensitive-data.txt |
 
+## Containment Actions
 
+1. Deactivated the compromised access key immediately upon detection
 
-\## Containment Actions
+2. Verified the key could no longer authenticate
 
+## Eradication Actions
 
+1. Deleted the compromised access key permanently
 
-1\. Deactivated the compromised access key immediately upon detection
+2. Removed the attacker's IAM inline policy
 
-2\. Verified the key could no longer authenticate
+3. Deleted the attacker IAM user
 
-
-
-\## Eradication Actions
-
-
-
-1\. Deleted the compromised access key permanently
-
-2\. Removed the attacker's IAM inline policy
-
-3\. Deleted the attacker IAM user
-
-
-
-\## Root Cause
-
-
+## Root Cause
 
 Access keys were committed to a public repository due to lack of .gitignore rules and pre-commit secret scanning.
 
+## Lessons Learned & Recommendations
 
+1. [e.g., "Implement automated secret scanning in CI/CD pipeline (e.g., git-secrets, truffleHog)"]
 
-\## Lessons Learned \& Recommendations
+2. [e.g., "Enable GuardDuty for continuous threat detection and automated alerting"]
 
+3. [e.g., "Use IAM roles and SSO instead of long-lived access keys wherever possible"]
 
+4. [e.g., "Apply least-privilege S3 bucket policies — restrict access to known principals and source VPCs"]
 
-1\. \[e.g., "Implement automated secret scanning in CI/CD pipeline (e.g., git-secrets, truffleHog)"]
-
-2\. \[e.g., "Enable GuardDuty for continuous threat detection and automated alerting"]
-
-3\. \[e.g., "Use IAM roles and SSO instead of long-lived access keys wherever possible"]
-
-4\. \[e.g., "Apply least-privilege S3 bucket policies — restrict access to known principals and source VPCs"]
-
-5\. \[e.g., "Ensure CloudTrail trails with S3 data event logging and CloudWatch Logs integration are configured in all accounts before an incident occurs — evidence that does not exist cannot be recovered"]
-
+5. [e.g., "Ensure CloudTrail trails with S3 data event logging and CloudWatch Logs integration are configured in all accounts before an incident occurs — evidence that does not exist cannot be recovered"]
