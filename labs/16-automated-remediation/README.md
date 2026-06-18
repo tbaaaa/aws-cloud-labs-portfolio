@@ -1270,7 +1270,7 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-5c
 ## Cleanup Verification
 
 | Resource | Cleanup Action | Verified |
-|---|---|
+|---|---|---|
 | EventBridge target | Removed | Yes |
 | EventBridge rule | Deleted | Yes |
 | Lambda function | Deleted | Yes |
