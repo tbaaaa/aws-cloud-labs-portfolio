@@ -53,4 +53,5 @@ labs/
 ├── 14-credential-revocation/
 ├── 15-investigate-and-report/
 ├── 16-automated-remediation/
+├── 17-s3-security-reliability/
 └── ...

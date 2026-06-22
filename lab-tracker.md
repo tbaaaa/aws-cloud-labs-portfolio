@@ -18,3 +18,4 @@
 | 2026-06-08 | Credential Revocation | Lab 5A | Completed | Simulating a compromised AWS access key, deactivating it for containment, testing failed authentication, and deleting it permanently |
 | 2026-06-11 | Investigate and Report | Lab 5B | Completed | Simulating S3 data exfiltration, investigating with CloudTrail and CloudWatch Logs Insights, revoking credentials, and writing an incident report |
 | 2026-06-18 | Automated Remediation | Lab 5C | Completed | Building an automated incident response pipeline using CloudTrail, EventBridge, and Lambda to deactivate newly created IAM access keys |
+| 2026-06-22 | S3 Security & Reliability | Lab 6A | In Progress | Applying least-privilege S3 bucket access with IAM roles and a bucket policy, then using S3 versioning to recover deleted data |
