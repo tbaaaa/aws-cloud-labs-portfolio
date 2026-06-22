@@ -827,13 +827,13 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-6a
 
 | Screenshot                                        | Description                                             |
 | ------------------------------------------------- | ------------------------------------------------------- |
-| `screenshots/aws-identity-verified.png`           | AWS CLI identity verified                               |
 | `screenshots/project-folder-created.png`          | Local lab folder created                                |
 | `screenshots/s3-bucket-created.png`               | S3 bucket created                                       |
 | `screenshots/confidential-file-uploaded.png`      | Salary report uploaded to S3                            |
 | `screenshots/hr-role-created.png`                 | HR Lambda role created                                  |
 | `screenshots/analytics-role-created.png`          | Analytics Lambda role created                           |
-| `screenshots/lambda-functions-created.png`        | Both Lambda functions deployed                          |
+| `screenshots/lambda-functions-created-1.png`        | Both Lambda functions deployed                          |
+| `screenshots/lambda-functions-created-2.png`        | Both Lambda functions deployed                          |
 | `screenshots/hr-access-before-policy.png`         | HR function accessed salary report before policy        |
 | `screenshots/analytics-access-before-policy.png`  | Analytics function accessed salary report before policy |
 | `screenshots/restrictive-policy-created.png`      | Restrictive S3 bucket policy created                    |
@@ -845,4 +845,5 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-6a
 | `screenshots/object-versions-listed.png`          | Previous object versions displayed                      |
 | `screenshots/delete-marker-console.png`           | Delete marker visible in S3 console                     |
 | `screenshots/file-recovered.png`                  | Salary report recovered successfully                    |
-| `screenshots/cleanup-verified.png`                | Lab cleanup completed                                   |
+| `screenshots/cleanup-verified-1.png`                | Lab cleanup completed                                   |
+| `screenshots/cleanup-verified-2.png`                | Lab cleanup completed                                   |
