@@ -32,6 +32,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 14 | Credential Revocation | AICloudFusion Lab 5A | Completed |
 | 15 | Investigate and Report | AICloudFusion Lab 5B | Completed |
 | 16 | Automated Remediation | AICloudFusion Lab 5C | Completed |
+| 17 | S3 Security & Reliability | AICloudFusion Lab 6A | Completed |
 
 ## Repository Structure
 
