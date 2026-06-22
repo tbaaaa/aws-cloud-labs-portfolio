@@ -1299,7 +1299,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-5c
 
 | Screenshot                                      | Description                                                 |
 | ----------------------------------------------- | ----------------------------------------------------------- |
-| `screenshots/aws-identity-verified.png`         | AWS CLI admin identity verified                             |
 | `screenshots/project-folder-created.png`        | Local lab folder created                                    |
 | `screenshots/cloudtrail-trails-checked.png`     | Existing CloudTrail trails checked                          |
 | `screenshots/cloudtrail-bucket-created.png`     | CloudTrail S3 bucket created                                |
@@ -1321,5 +1320,8 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-5c
 | `screenshots/auto-revoke-triggered.png`         | New access key created to trigger pipeline                  |
 | `screenshots/auto-revoke-key-inactive.png`      | New key automatically deactivated                           |
 | `screenshots/lambda-logs-security-alert.png`    | Lambda logs confirmed key deactivation                      |
-| `screenshots/console-verification.png`          | Console verification of Lambda, EventBridge, and CloudTrail |
-| `screenshots/cleanup-verified.png`              | Lab cleanup verified                                        |
+| `screenshots/console-verification-1.png`          | Console verification of Lambda |
+| `screenshots/console-verification-2.png`          | Console verification of CloudTrail |
+| `screenshots/console-verification-3.png`          | Console verification of EventBridge |
+| `screenshots/cleanup-verified-1.png`              | Lab cleanup verified                                        |
+| `screenshots/cleanup-verified-2.png`              | Lab cleanup verified                                        |
