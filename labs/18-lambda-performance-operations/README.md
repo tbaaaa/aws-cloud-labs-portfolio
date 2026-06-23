@@ -816,7 +816,6 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-6b
 | `screenshots/performance-128mb.png`          | Performance result at 128 MB                       |
 | `screenshots/lambda-memory-256mb.png`        | Lambda memory increased to 256 MB                  |
 | `screenshots/performance-256mb.png`          | Performance result at 256 MB                       |
-| `screenshots/performance-comparison.png`     | Before-and-after performance comparison            |
 | `screenshots/crash-before-alarm.png`         | Lambda crash before monitoring was configured      |
 | `screenshots/sns-topic-created.png`          | SNS alert topic created                            |
 | `screenshots/sns-subscription-confirmed.png` | SNS email subscription confirmed                   |
