@@ -33,7 +33,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 15 | Investigate and Report | AICloudFusion Lab 5B | Completed |
 | 16 | Automated Remediation | AICloudFusion Lab 5C | Completed |
 | 17 | S3 Security & Reliability | AICloudFusion Lab 6A | Completed |
-| 18 | Lambda Performance & Operations | AICloudFusion Lab 6B | In Progress |
+| 18 | Lambda Performance & Operations | AICloudFusion Lab 6B | Completed |
 
 ## Repository Structure
 
