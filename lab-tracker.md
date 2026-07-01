@@ -20,3 +20,4 @@
 | 2026-06-18 | Automated Remediation | Lab 5C | Completed | Building an automated incident response pipeline using CloudTrail, EventBridge, and Lambda to deactivate newly created IAM access keys |
 | 2026-06-22 | S3 Security & Reliability | Lab 6A | Completed | Applying least-privilege S3 bucket access with IAM roles and a bucket policy, then using S3 versioning to recover deleted data |
 | 2026-06-23 | Lambda Performance & Operations | Lab 6B | Completed | Right-sizing Lambda memory for improved performance and creating CloudWatch/SNS alerting for function errors |
+| 2026-07-01 | Cost Optimization & Sustainability | Lab 6C | In Progress | Building a Lambda cost projection dashboard, switching from x86_64 to Graviton arm64, and applying CloudWatch Logs retention to reduce projected cost and storage growth |
