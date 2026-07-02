@@ -1006,6 +1006,8 @@ Remove-Item -Recurse -Force ~\Desktop\workshop-lab-6c
 | `screenshots/dashboard-after-graviton.png`    | Second dashboard cost data point              |
 | `screenshots/log-retention-none.png`          | Log group initially showed no retention limit |
 | `screenshots/log-retention-seven-days.png`    | Seven-day retention policy applied            |
+| `screenshots/log-retention-seven-days-console.png`    | Seven-day retention policy seen in AWS Console |
 | `screenshots/final-cost-projection.png`       | Final projected cost after log retention      |
 | `screenshots/final-dashboard-cost-trend.png`  | Dashboard showing downward cost trend         |
-| `screenshots/cleanup-verified.png`            | Lab cleanup completed                         |
+| `screenshots/cleanup-verified-1.png`            | Lab cleanup completed                       |
+| `screenshots/cleanup-verified-2.png`            | Lab cleanup completed                       |
