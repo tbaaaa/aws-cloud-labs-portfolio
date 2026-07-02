@@ -363,7 +363,7 @@ Write-Output "=== WORKLOAD RESULT ==="
 **My typical x86_64 duration:**
 
 ```text
-<RECORD_TYPICAL_DURATION_MS>
+376 ms
 ```
 
 ---
@@ -645,7 +645,7 @@ TOTAL PROJECTED COST: $<VALUE>/month
 **My baseline projected total cost:**
 
 ```text
-$<RECORD_BASELINE_TOTAL>/month
+$1.9498/month
 ```
 
 ---
@@ -707,7 +707,7 @@ Write-Output "=== WORKLOAD RESULT (ARM64 GRAVITON) ==="
 **My typical arm64 duration:**
 
 ```text
-<RECORD_TYPICAL_ARM64_DURATION_MS>
+305 ms
 ```
 
 ---
@@ -745,7 +745,7 @@ Write-Output "=== COST PROJECTION (AFTER GRAVITON) ==="
 **My projected total after Graviton:**
 
 ```text
-$<RECORD_GRAVITON_TOTAL>/month
+$1.3941/month
 ```
 
 ## Part 2: Cost Optimization and Sustainability — Log Retention
@@ -831,16 +831,16 @@ TOTAL PROJECTED COST: $<LOWER_VALUE>/month
 **My final projected total:**
 
 ```text
-$<RECORD_FINAL_TOTAL>/month
+$1.2176/month
 ```
 
 ### Cost Comparison
 
 | Stage                 | Architecture | Log Retention | Projected Compute Cost | Projected Logs Cost | Projected Total Cost |
 | --------------------- | ------------ | ------------- | ---------------------: | ------------------: | -------------------: |
-| Before optimization   | x86_64       | Never expire  |             `$<VALUE>` |          `$<VALUE>` |           `$<VALUE>` |
-| After Graviton        | arm64        | Never expire  |             `$<VALUE>` |          `$<VALUE>` |           `$<VALUE>` |
-| Final optimized state | arm64        | 7 days        |             `$<VALUE>` |          `$<VALUE>` |           `$<VALUE>` |
+| Before optimization   | x86_64       | Never expire  |             `$1.7698` |          `$0.1800` |           `$1.9498` |
+| After Graviton        | arm64        | Never expire  |             `$1.2141` |          `$0.1800` |           `$1.3941` |
+| Final optimized state | arm64        | 7 days        |             `$1.2141` |          `$0.0035` |           `$1.2176` |
 
 ### Step 17: Console Verification
 
