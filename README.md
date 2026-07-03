@@ -35,6 +35,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 17 | S3 Security & Reliability | AICloudFusion Lab 6A | Completed |
 | 18 | Lambda Performance & Operations | AICloudFusion Lab 6B | Completed |
 | 19 | Cost Optimization & Sustainability | AICloudFusion Lab 6C | Completed |
+| 20 | OpenTofu IaC Foundation | AICloudFusion Lab 7A | In Progress |
 
 ## Repository Structure
 
@@ -59,4 +60,5 @@ labs/
 ├── 17-s3-security-reliability/
 ├── 18-lambda-performance-operations/
 ├── 19-cost-optimization-sustainability/
+├── 20-opentofu-iac-foundation/
 └── ...
