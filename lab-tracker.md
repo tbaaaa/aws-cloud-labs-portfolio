@@ -22,3 +22,4 @@
 | 2026-06-23 | Lambda Performance & Operations | Lab 6B | Completed | Right-sizing Lambda memory for improved performance and creating CloudWatch/SNS alerting for function errors |
 | 2026-07-01 | Cost Optimization & Sustainability | Lab 6C | Completed | Building a Lambda cost projection dashboard, switching from x86_64 to Graviton arm64, and applying CloudWatch Logs retention to reduce projected cost and storage growth |
 | 2026-07-03 | OpenTofu IaC Foundation | Lab 7A | Completed | Setting up an Infrastructure as Code foundation with OpenTofu, remote S3 state, DynamoDB state locking, a dedicated IAM deploy role, and a reusable dev environment structure |
+| 2026-07-07 | Lambda with Infrastructure as Code | Lab 7B | In Progress | Deploying and updating a Lambda function, IAM execution role, and CloudWatch log group through OpenTofu |
