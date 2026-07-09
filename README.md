@@ -36,7 +36,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 18 | Lambda Performance & Operations | AICloudFusion Lab 6B | Completed |
 | 19 | Cost Optimization & Sustainability | AICloudFusion Lab 6C | Completed |
 | 20 | OpenTofu IaC Foundation | AICloudFusion Lab 7A | Completed |
-| 21 | Lambda with Infrastructure as Code | AICloudFusion Lab 7B | In Progress |
+| 21 | Lambda with Infrastructure as Code | AICloudFusion Lab 7B | Completed |
 
 ## Repository Structure
 
