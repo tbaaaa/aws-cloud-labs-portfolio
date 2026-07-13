@@ -37,6 +37,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 19 | Cost Optimization & Sustainability | AICloudFusion Lab 6C | Completed |
 | 20 | OpenTofu IaC Foundation | AICloudFusion Lab 7A | Completed |
 | 21 | Lambda with Infrastructure as Code | AICloudFusion Lab 7B | Completed |
+| 22 | Event-Driven Modules | AICloudFusion Lab 7C | In Progress |
 
 ## Repository Structure
 
@@ -63,4 +64,5 @@ labs/
 ├── 19-cost-optimization-sustainability/
 ├── 20-opentofu-iac-foundation/
 ├── 21-lambda-with-iac/
+├── 22-event-driven-modules/
 └── ...
