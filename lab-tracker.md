@@ -23,4 +23,4 @@
 | 2026-07-01 | Cost Optimization & Sustainability | Lab 6C | Completed | Building a Lambda cost projection dashboard, switching from x86_64 to Graviton arm64, and applying CloudWatch Logs retention to reduce projected cost and storage growth |
 | 2026-07-03 | OpenTofu IaC Foundation | Lab 7A | Completed | Setting up an Infrastructure as Code foundation with OpenTofu, remote S3 state, DynamoDB state locking, a dedicated IAM deploy role, and a reusable dev environment structure |
 | 2026-07-07 | Lambda with Infrastructure as Code | Lab 7B | Completed | Deploying and updating a Lambda function, IAM execution role, and CloudWatch log group through OpenTofu |
-| 2026-07-13 | Event-Driven Modules | Lab 7C | In Progress | Refactoring a Lambda stack into a reusable OpenTofu module and building an event-driven S3-to-Lambda architecture |
+| 2026-07-13 | Event-Driven Modules | Lab 7C | Completed | Refactoring a Lambda stack into a reusable OpenTofu module and building an event-driven S3-to-Lambda architecture |
