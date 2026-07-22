@@ -38,7 +38,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 20 | OpenTofu IaC Foundation | AICloudFusion Lab 7A | Completed |
 | 21 | Lambda with Infrastructure as Code | AICloudFusion Lab 7B | Completed |
 | 22 | Event-Driven Modules | AICloudFusion Lab 7C | Completed |
-| 23 | GitHub OIDC | AICloudFusion Lab 8A | In Progress |
+| 23 | GitHub OIDC | AICloudFusion Lab 8A | Completed |
 
 ## Repository Structure
 

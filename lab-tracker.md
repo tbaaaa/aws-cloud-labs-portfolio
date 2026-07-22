@@ -24,4 +24,4 @@
 | 2026-07-03 | OpenTofu IaC Foundation | Lab 7A | Completed | Setting up an Infrastructure as Code foundation with OpenTofu, remote S3 state, DynamoDB state locking, a dedicated IAM deploy role, and a reusable dev environment structure |
 | 2026-07-07 | Lambda with Infrastructure as Code | Lab 7B | Completed | Deploying and updating a Lambda function, IAM execution role, and CloudWatch log group through OpenTofu |
 | 2026-07-13 | Event-Driven Modules | Lab 7C | Completed | Refactoring a Lambda stack into a reusable OpenTofu module and building an event-driven S3-to-Lambda architecture |
-| 2026-07-22 | GitHub OIDC | Lab 8A | In Progress | Connecting the OpenTofu IaC repo to GitHub and setting up keyless AWS authentication using GitHub OIDC, an IAM identity provider, and a least-privilege pipeline role |
+| 2026-07-22 | GitHub OIDC | Lab 8A | Completed | Connecting the OpenTofu IaC repo to GitHub and setting up keyless AWS authentication using GitHub OIDC, an IAM identity provider, and a least-privilege pipeline role |
