@@ -747,7 +747,7 @@ pipeline-permissions.json
 
 | Issue                     | Cause | Fix |
 | ------------------------- | ----- | --- |
-| None currently documented | N/A   | N/A |
+| GitHub CLI installed but `gh` was not recognized | The terminal session did not have GitHub CLI in its PATH yet, or PowerShell needed to be reopened after installation | Closed and reopened PowerShell, verified installation with `winget list --id GitHub.cli`, checked for `gh.exe`, and reran `gh --version` |
 
 ## Troubleshooting Notes
 
