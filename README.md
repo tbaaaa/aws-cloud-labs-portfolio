@@ -39,6 +39,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 21 | Lambda with Infrastructure as Code | AICloudFusion Lab 7B | Completed |
 | 22 | Event-Driven Modules | AICloudFusion Lab 7C | Completed |
 | 23 | GitHub OIDC | AICloudFusion Lab 8A | Completed |
+| 24 | CI/CD Plan and Apply | AICloudFusion Lab 8B | In Progress |
 
 ## Repository Structure
 
@@ -67,4 +68,5 @@ labs/
 ├── 21-lambda-with-iac/
 ├── 22-event-driven-modules/
 ├── 23-github-oidc/
+├── 24-cicd-plan-apply/
 └── ...

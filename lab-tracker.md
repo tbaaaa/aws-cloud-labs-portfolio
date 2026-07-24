@@ -25,3 +25,4 @@
 | 2026-07-07 | Lambda with Infrastructure as Code | Lab 7B | Completed | Deploying and updating a Lambda function, IAM execution role, and CloudWatch log group through OpenTofu |
 | 2026-07-13 | Event-Driven Modules | Lab 7C | Completed | Refactoring a Lambda stack into a reusable OpenTofu module and building an event-driven S3-to-Lambda architecture |
 | 2026-07-22 | GitHub OIDC | Lab 8A | Completed | Connecting the OpenTofu IaC repo to GitHub and setting up keyless AWS authentication using GitHub OIDC, an IAM identity provider, and a least-privilege pipeline role |
+| 2026-07-23 | CI/CD Plan and Apply | Lab 8B | In Progress | Building a GitHub Actions CI/CD pipeline that runs OpenTofu plan on pull requests, applies on merge to main, and uses a guarded manual destroy workflow |
