@@ -1060,7 +1060,6 @@ After the destroy workflow completes, optional cleanup from Lab 8A can remove:
 | `screenshots/github-workflows-folder.png`             | `.github/workflows` folder created                     |
 | `screenshots/infra-workflow-created.png`              | `infra.yml` workflow created                           |
 | `screenshots/workflow-committed-pushed.png`           | CI/CD workflow committed and pushed                    |
-| `screenshots/actions-first-run.png`                   | First GitHub Actions run started                       |
 | `screenshots/actions-apply-success.png`               | First apply workflow completed successfully            |
 | `screenshots/demo-bucket-created.png`                 | Demo S3 bucket created by pipeline                     |
 | `screenshots/add-versioning-branch.png`               | `add-versioning` branch created                        |
