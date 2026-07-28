@@ -26,3 +26,4 @@
 | 2026-07-13 | Event-Driven Modules | Lab 7C | Completed | Refactoring a Lambda stack into a reusable OpenTofu module and building an event-driven S3-to-Lambda architecture |
 | 2026-07-22 | GitHub OIDC | Lab 8A | Completed | Connecting the OpenTofu IaC repo to GitHub and setting up keyless AWS authentication using GitHub OIDC, an IAM identity provider, and a least-privilege pipeline role |
 | 2026-07-23 | CI/CD Plan and Apply | Lab 8B | Completed | Building a GitHub Actions CI/CD pipeline that runs OpenTofu plan on pull requests, applies on merge to main, and uses a guarded manual destroy workflow |
+| 2026-07-23 | Drift Detection | Lab 8C | In Progress | Creating a scheduled GitHub Actions drift detection workflow, simulating a manual AWS change, detecting drift with OpenTofu, and reconciling infrastructure back to code |
