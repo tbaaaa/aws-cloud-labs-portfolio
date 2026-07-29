@@ -27,3 +27,4 @@
 | 2026-07-22 | GitHub OIDC | Lab 8A | Completed | Connecting the OpenTofu IaC repo to GitHub and setting up keyless AWS authentication using GitHub OIDC, an IAM identity provider, and a least-privilege pipeline role |
 | 2026-07-23 | CI/CD Plan and Apply | Lab 8B | Completed | Building a GitHub Actions CI/CD pipeline that runs OpenTofu plan on pull requests, applies on merge to main, and uses a guarded manual destroy workflow |
 | 2026-07-23 | Drift Detection | Lab 8C | Completed | Creating a scheduled GitHub Actions drift detection workflow, simulating a manual AWS change, detecting drift with OpenTofu, and reconciling infrastructure back to code |
+| 2026-07-29 | CloudWatch Alarms | Lab 9A | In Progress | Deploying a Lambda function, observing healthy CloudWatch metrics, creating an SNS email alert, and triggering a CloudWatch alarm by deploying broken Lambda code |

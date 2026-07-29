@@ -41,6 +41,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 23 | GitHub OIDC | AICloudFusion Lab 8A | Completed |
 | 24 | CI/CD Plan and Apply | AICloudFusion Lab 8B | Completed |
 | 25 | Drift Detection | AICloudFusion Lab 8C | Completed |
+| 26 | CloudWatch Alarms | AICloudFusion Lab 9A | In Progress |
 
 ## Repository Structure
 
