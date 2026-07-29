@@ -72,4 +72,5 @@ labs/
 ├── 23-github-oidc/
 ├── 24-cicd-plan-apply/
 ├── 25-drift-detection/
+├── 26-cloudwatch-alarms/
 └── ...
