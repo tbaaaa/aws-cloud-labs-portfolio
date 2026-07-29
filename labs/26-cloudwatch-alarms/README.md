@@ -936,7 +936,6 @@ NoSuchEntity
 
 | Screenshot | Description |
 |---|---|
-| `screenshots/aws-identity-verified.png` | AWS CLI identity verified |
 | `screenshots/lab-folder-created.png` | Local `workshop-lab-9a` folder created |
 | `screenshots/healthy-handler-created.png` | Healthy Lambda handler code created |
 | `screenshots/lambda-trust-policy-created.png` | Lambda trust policy created |
