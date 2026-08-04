@@ -28,4 +28,4 @@
 | 2026-07-27 | CI/CD Plan and Apply | Lab 8B | Completed | Building a GitHub Actions CI/CD pipeline that runs OpenTofu plan on pull requests, applies on merge to main, and uses a guarded manual destroy workflow |
 | 2026-07-28 | Drift Detection | Lab 8C | Completed | Creating a scheduled GitHub Actions drift detection workflow, simulating a manual AWS change, detecting drift with OpenTofu, and reconciling infrastructure back to code |
 | 2026-07-29 | CloudWatch Alarms | Lab 9A | Completed | Deploying a Lambda function, observing healthy CloudWatch metrics, creating an SNS email alert, and triggering a CloudWatch alarm by deploying broken Lambda code |
-| 2026-08-04 | Diagnose with CloudWatch Logs and Log Insights | Lab 9B | In Progress | Investigating a broken Lambda function using CloudWatch metrics, raw logs, and Logs Insights, then fixing the code and verifying recovery |
+| 2026-08-04 | Diagnose with CloudWatch Logs and Log Insights | Lab 9B | Completed | Investigating a broken Lambda function using CloudWatch metrics, raw logs, and Logs Insights, then fixing the code and verifying recovery |
