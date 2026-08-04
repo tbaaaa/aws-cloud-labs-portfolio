@@ -1,5 +1,15 @@
 # Lab 27: Diagnose with CloudWatch Logs and Log Insights
 
+## Lab Disclaimer
+
+This lab was completed as a learning exercise and reflects my actual process while working through the activity.
+
+Some parts of the lab, especially Steps 6, 8, and 9, were not completed exactly as outlined in the original AICloudFusion instructions. Because of this, those sections may not fully represent the intended workflow from the source lab and may be revised in the future when repeated.
+
+Additionally, some tasks took longer than the expected timeframes shown in the lab guide due to troubleshooting and correction of earlier setup issues. The Lambda function, CloudWatch alarm, and SNS topic were all recreated because they had been deleted during the cleanup from Lab 9A.
+
+I am keeping this documentation as an honest record of the work completed, the problems encountered, and the lessons learned. A future revision of this lab may include a cleaner run that more closely follows the original step sequence.
+
 ## Lab Summary
 
 In this lab, I investigated a broken Lambda function using CloudWatch metrics, CloudWatch Logs, and CloudWatch Logs Insights.
@@ -972,6 +982,6 @@ NoSuchEntity
 | `screenshots/fixed-invocation-success.png` | Fixed function returned successful response |
 | `screenshots/healthy-invocations-generated.png` | Healthy invocations generated after fix |
 | `screenshots/errors-returned-to-zero.png` | Recent error metric returned to zero |
-| `screenshots/alarm-returned-ok.png` | CloudWatch alarm returned to `OK` |
-| `screenshots/cloudwatch-error-spike-and-recovery.png` | CloudWatch graph showed error spike and recovery |
+X| `screenshots/alarm-returned-ok.png` | CloudWatch alarm returned to `OK` |
+X| `screenshots/cloudwatch-error-spike-and-recovery.png` | CloudWatch graph showed error spike and recovery |
 | `screenshots/cleanup-verified.png` | Cleanup verified if resources were removed |
