@@ -42,6 +42,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 24 | CI/CD Plan and Apply | AICloudFusion Lab 8B | Completed |
 | 25 | Drift Detection | AICloudFusion Lab 8C | Completed |
 | 26 | CloudWatch Alarms | AICloudFusion Lab 9A | Completed |
+| 27 | Diagnose with CloudWatch Logs and Log Insights | AICloudFusion Lab 9B | In Progress |
 
 ## Repository Structure
 
@@ -73,4 +74,5 @@ labs/
 ├── 24-cicd-plan-apply/
 ├── 25-drift-detection/
 ├── 26-cloudwatch-alarms/
+├── 27-diagnose-with-logs/
 └── ...
