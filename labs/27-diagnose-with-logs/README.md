@@ -799,8 +799,8 @@ Errors
 | Fixed Lambda invocation succeeded | Passed |
 | Healthy invocations generated | Passed |
 | Recent error metric returned to zero | Passed |
-| Alarm returned to `OK` | Passed |
-| CloudWatch console verification completed | Passed |
+| Alarm returned to `OK` | Failed |
+| CloudWatch console verification completed | Failed |
 
 ## Issues Encountered
 
