@@ -916,12 +916,17 @@ aws cloudwatch put-dashboard `
 
 | Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| `No valid credential sources found` during local `tofu plan` | OpenTofu could read the `.tf` files, but the AWS provider could not find the base AWS credentials needed before assuming the deploy role | Cleared stale AWS credential environment variables, set `$env:AWS_PROFILE="ayden"` and `$env:AWS_SDK_LOAD_CONFIG="1"`, refreshed SSO, verified `aws sts get-caller-identity`, then reran `tofu plan` successfully |
+| Lab 9C workflow failed after being pushed to `main` | The new Deploy and Smoke Test workflow ran before the OpenTofu environment was fully reviewed and before old workflow conflicts were fully ruled out | Paused the workflow by changing it to `workflow_dispatch`, verified AWS credentials locally, reran `tofu init`, `tofu validate`, and `tofu plan`, then continued only after the local OpenTofu plan succeeded |
+| Existing Session 8 workflows could run automatically before Lab 9C changes were ready | The saved `workshop-iac` repository still contained previous GitHub Actions workflows from Session 8, including workflows that could run on pushes to `main` or on a schedule | Reviewed `.github/workflows`, changed old automatic triggers to manual `workflow_dispatch` triggers where appropriate, synced `main`, and created a separate Lab 9C branch before making changes |
+| Smoke test failed with `Unexpected response format` even though Lambda returned `StatusCode: 200` | The Lambda invocation succeeded, but the workflow validation logic expected a simpler response format. The actual Lambda response contained an outer `statusCode` and a nested JSON string inside the `body` field. | Updated the smoke test step to parse `response.json` with `jq`, check `.statusCode`, parse `.body` using `fromjson`, and verify that the nested `status` value was `healthy`. |
 
 ## Troubleshooting Notes
 
 | Issue | What It Means | How to Fix |
 |---|---|---|
+| `No valid credential sources found` during `tofu plan` | OpenTofu could read the `.tf` files, but the AWS provider could not find the base AWS credentials needed before assuming `workshop-tofu-deploy-role`. The terminal did not have the correct `AWS_PROFILE`/SSO session available, so the provider tried EC2 instance metadata and failed because the command was running locally. | Cleared stale AWS credential environment variables, set `$env:AWS_PROFILE="ayden"` and `$env:AWS_SDK_LOAD_CONFIG="1"`, refreshed SSO with `aws sso login --profile ayden`, verified identity with `aws sts get-caller-identity`, then reran `tofu init`, `tofu validate`, and `tofu plan` from `infra/environments/dev`. |
+| `Error: No configuration files` during `tofu plan` | OpenTofu was run from a folder that did not contain any `.tf` files, so it had no infrastructure configuration to evaluate | Checked the current folder with `pwd` and `Get-ChildItem`, located the `.tf` files with `Get-ChildItem -Recurse -Filter *.tf`, moved into `infra/environments/dev`, then reran `tofu init`, `tofu validate`, and `tofu plan` |
 | `gh auth status` fails | GitHub CLI is not authenticated | Run `gh auth login` and authenticate through the browser |
 | `gh` is not recognized | GitHub CLI is not in PATH or terminal was not reopened after installation | Reopen PowerShell or run GitHub CLI directly from its install path |
 | Pipeline fails at `Configure AWS credentials` | GitHub OIDC trust policy does not match the repo or `id-token: write` is missing | Check the OIDC provider, role trust policy, and workflow permissions |
