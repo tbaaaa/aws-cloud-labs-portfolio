@@ -728,4 +728,3 @@ NoSuchEntity
 | `screenshots/request-received-log.png` | `request_received` structured log verified |
 | `screenshots/api-call-success-log.png` | `api_call_success` structured log verified |
 | `screenshots/request-completed-log.png` | `request_completed` structured log verified |
-| `screenshots/cleanup-verified.png` | Cleanup verified if resources were removed |
