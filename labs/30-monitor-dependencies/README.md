@@ -991,5 +991,5 @@ NoSuchEntity
 | `screenshots/alarm-state-alarm.png` | `chatbot-api-slow` entered `ALARM` state |
 | `screenshots/healthy-version-restored.png` | Healthy chatbot code redeployed |
 | `screenshots/latency-recovered.png` | Latency returned closer to baseline |
-| `screenshots/alarm-returned-ok.png` | Alarm returned to `OK` after recovery |
-| `screenshots/cleanup-verified.png` | Cleanup verified if resources were removed |
+| `screenshots/alarm-returned-ok-console.png` | Alarm returned to `OK` after recovery |
+| `screenshots/alarm-returned-ok-cli.png` | Alarm returned to `OK` after recovery |
