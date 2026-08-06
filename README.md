@@ -45,6 +45,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 27 | Diagnose with CloudWatch Logs and Log Insights | AICloudFusion Lab 9B | Completed |
 | 28 | CI Smoke Test | AICloudFusion Lab 9C | Completed |
 | 29 | Deploy Chatbot with Structured Logging | AICloudFusion Lab 10A | Completed |
+| 30 | Monitor Chatbot Dependencies | AICloudFusion Lab 10B | In Progress |
 
 ## Repository Structure
 
@@ -79,4 +80,5 @@ labs/
 ├── 27-diagnose-with-logs/
 ├── 28-ci-smoke-test/
 ├── 29-deploy-chatbot/
+├── 30-monitor-dependencies/
 └── ...

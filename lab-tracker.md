@@ -31,3 +31,4 @@
 | 2026-08-04 | Diagnose with CloudWatch Logs and Log Insights | Lab 9B | Completed | Investigating a broken Lambda function using CloudWatch metrics, raw logs, and Logs Insights, then fixing the code and verifying recovery |
 | 2026-08-04 | CI Smoke Test | Lab 9C | Completed | Adding a GitHub Actions smoke test that deploys a Lambda function, invokes it after deployment, blocks broken code before merge, and creates a CloudWatch dashboard for operational visibility |
 | 2026-08-06 | Deploy Chatbot with Structured Logging | Lab 10A | Completed | Deploying a Lambda trivia chatbot that calls an external API and writes structured JSON logs to CloudWatch for observability |
+| 2026-08-06 | Monitor Chatbot Dependencies | Lab 10B | In Progress | Creating CloudWatch metric filters, custom metrics, a dashboard, and a latency alarm to monitor the chatbot’s external trivia API dependency |
