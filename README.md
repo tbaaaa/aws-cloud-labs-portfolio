@@ -46,7 +46,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 28 | CI Smoke Test | AICloudFusion Lab 9C | Completed |
 | 29 | Deploy Chatbot with Structured Logging | AICloudFusion Lab 10A | Completed |
 | 30 | Monitor Chatbot Dependencies | AICloudFusion Lab 10B | Completed |
-| 31 | Resilient Chatbot Fallback | AICloudFusion Lab 10C | In Progress |
+| 31 | Resilient Chatbot Fallback | AICloudFusion Lab 10C | Completed |
 
 ## Repository Structure
 
