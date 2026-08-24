@@ -47,6 +47,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 29 | Deploy Chatbot with Structured Logging | AICloudFusion Lab 10A | Completed |
 | 30 | Monitor Chatbot Dependencies | AICloudFusion Lab 10B | Completed |
 | 31 | Resilient Chatbot Fallback | AICloudFusion Lab 10C | Completed |
+| 32 | Bedrock Chatbot | AICloudFusion Lab 11A | In Progress |
 
 ## Repository Structure
 
@@ -83,4 +84,5 @@ labs/
 ├── 29-deploy-chatbot/
 ├── 30-monitor-dependencies/
 ├── 31-resilient-fallback/
+├── 32-bedrock-chatbot/
 └── ...
