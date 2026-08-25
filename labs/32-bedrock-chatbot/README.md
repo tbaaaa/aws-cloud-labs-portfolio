@@ -644,7 +644,7 @@ Write a haiku about cloud computing.
 
 | Issue | Cause | Fix |
 |---|---|---|
-| None currently documented | N/A | N/A |
+| Bedrock test failed with `ThrottlingException: Too many tokens per day` | The account, model, or region appeared to have reached or been assigned a low daily token quota for Bedrock model invocation | Reduced the prompt size and `maxTokens`, checked Amazon Bedrock model access and Service Quotas for the selected model in `us-east-1`, and planned to request a quota increase if the applied quota remained too low |
 
 ## Troubleshooting Notes
 
@@ -808,7 +808,6 @@ NoSuchEntity
 
 | Screenshot | Description |
 |---|---|
-| `screenshots/aws-identity-verified.png` | AWS CLI identity verified |
 | `screenshots/lab-folder-created.png` | Local `workshop-lab-11a` folder created |
 | `screenshots/bedrock-test-prompt-created.png` | Bedrock test prompt file created |
 | `screenshots/bedrock-cli-response.png` | Bedrock direct CLI call succeeded |
