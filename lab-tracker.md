@@ -34,3 +34,4 @@
 | 2026-08-06 | Monitor Chatbot Dependencies | Lab 10B | Completed | Creating CloudWatch metric filters, custom metrics, a dashboard, and a latency alarm to monitor the chatbot’s external trivia API dependency |
 | 2026-08-07 | Resilient Chatbot Fallback | Lab 10C | Completed | Adding SSM Parameter Store runtime configuration, fallback mode, and graceful degradation to keep the chatbot responsive when the external trivia API is degraded |
 | 2026-09-17 | Bedrock Chatbot | Lab 11A | Completed | Building a serverless AI chatbot using Amazon Bedrock Nova Micro, AWS Lambda, API Gateway, and structured CloudWatch logging |
+| 2026-09-17 | Prompt Engineering & System Prompts | Lab 11B | In Progress | Adding a system prompt to control chatbot personality and topic constraints, testing multiple personas, implementing conversation history, and comparing token usage across strategies |
