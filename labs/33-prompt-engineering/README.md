@@ -442,7 +442,6 @@ NoSuchEntity
 
 | Screenshot | Description |
 |---|---|
-| `screenshots/lab11a-folder-verified.png` | Confirmed the Lab 11A chatbot still responds before making changes |
 | `screenshots/system-prompt-added-handler.png` | `handler.py` updated with the tutor system prompt, lowered maxTokens, and lowered temperature |
 | `screenshots/system-prompt-deployed.png` | Updated Lambda code deployed successfully |
 | `screenshots/ontopic-question-response.png` | Short, analogy-based answer returned for an on-topic AWS question |
@@ -452,6 +451,5 @@ NoSuchEntity
 | `screenshots/pirate-response.png` | Pirate-themed explanation of Lambda, ending in "Arrr!" |
 | `screenshots/interviewer-prompt-response.png` | Technical interviewer persona responded with a probing follow-up question instead of an answer |
 | `screenshots/build-messages-function-added.png` | `build_messages()` helper function added above `lambda_handler` |
-| `screenshots/history-payload-response.png` | Multi-turn response showing awareness of a prior question via conversation history |
 | `screenshots/token-usage-no-history.png` | `total_tokens` for a stateless, no-history request |
 | `screenshots/token-usage-with-history.png` | `total_tokens` for the same style of request with conversation history included, showing the increase |
