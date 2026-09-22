@@ -35,3 +35,4 @@
 | 2026-08-07 | Resilient Chatbot Fallback | Lab 10C | Completed | Adding SSM Parameter Store runtime configuration, fallback mode, and graceful degradation to keep the chatbot responsive when the external trivia API is degraded |
 | 2026-09-17 | Bedrock Chatbot | Lab 11A | Completed | Building a serverless AI chatbot using Amazon Bedrock Nova Micro, AWS Lambda, API Gateway, and structured CloudWatch logging |
 | 2026-09-17 | Prompt Engineering & System Prompts | Lab 11B | Completed | Adding a system prompt to control chatbot personality and topic constraints, testing multiple personas, implementing conversation history, and comparing token usage across strategies |
+| 2026-09-22 | Production AI: Token Budgets, Cost Monitoring & Guardrails | Lab 11C | In Progress | Adding input validation to reject oversized prompts before they reach Bedrock, extracting a token-usage CloudWatch metric, building an AI ops dashboard, and creating a token-spike alarm |

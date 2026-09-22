@@ -49,6 +49,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 31 | Resilient Chatbot Fallback | AICloudFusion Lab 10C | Completed |
 | 32 | Bedrock Chatbot | AICloudFusion Lab 11A | Completed |
 | 33 | Prompt Engineering & System Prompts | AICloudFusion Lab 11B | Completed |
+| 34 | Production AI: Token Budgets, Cost Monitoring & Guardrails | AICloudFusion Lab 11C | In Progress |
 
 ## Repository Structure
 
@@ -87,4 +88,5 @@ labs/
 ├── 31-resilient-fallback/
 ├── 32-bedrock-chatbot/
 ├── 33-prompt-engineering/
+├── 34-ai-monitoring/
 └── ...
