@@ -50,6 +50,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 32 | Bedrock Chatbot | AICloudFusion Lab 11A | Completed |
 | 33 | Prompt Engineering & System Prompts | AICloudFusion Lab 11B | Completed |
 | 34 | Production AI: Token Budgets, Cost Monitoring & Guardrails | AICloudFusion Lab 11C | Completed |
+| 35 | Give Your Chatbot a Brain: RAG | AICloudFusion Lab 12A | In Progress |
 
 ## Repository Structure
 
@@ -89,4 +90,5 @@ labs/
 ├── 32-bedrock-chatbot/
 ├── 33-prompt-engineering/
 ├── 34-ai-monitoring/
+├── 35-rag-knowledge-base/
 └── ...
