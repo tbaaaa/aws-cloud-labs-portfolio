@@ -654,7 +654,8 @@ Invoking the chatbot with a normal question such as "What is S3?" should answer 
 | `screenshots/s3-console-knowledge-base.png` | S3 console showing the three documents in the knowledge base bucket (account ID redacted) |
 | `screenshots/kb-s3-policy-attached.png` | `kb-s3-policy.json` and the successful `put-role-policy` command scoped to the knowledge base bucket (account ID redacted) |
 | `screenshots/handler-backup-created.png` | The `handler-11c-backup.py` backup created before editing |
-| `screenshots/handler-retrieval-functions.png` | `handler.py` showing the new imports, cache, `load_knowledge_base()`, and `retrieve_context()` |
+| `screenshots/handler-retrieval-functions-1.png` | `handler.py` showing the new imports, cache |
+| `screenshots/handler-retrieval-functions-2.png` | `load_knowledge_base()`, and `retrieve_context()` |
 | `screenshots/handler-rag-block-grounded-prompt.png` | `handler.py` showing the RAG block, the grounded system prompt, and the updated `bedrock.converse()` call |
 | `screenshots/lambda-deployed.png` | Successful `update-function-code` output for the updated function |
 | `screenshots/kb-bucket-env-var-set.png` | `update-function-configuration` output or the Lambda console Environment variables tab showing `KB_BUCKET` (account ID redacted) |
