@@ -569,9 +569,14 @@ aws iam list-role-policies --role-name workshop-lab11-lambda-role --query "Polic
 | `screenshots/guardrail-policy-files-created.png` | The four policy files (`content-policy.json`, `topic-policy.json`, `pii-policy.json`, `word-policy.json`) in the project folder |
 | `screenshots/guardrail-created-draft.png` | `create-guardrail` output showing the returned `guardrailId` and `"version": "DRAFT"` (account ID and full ARN redacted) |
 | `screenshots/guardrail-version-1-published.png` | `create-guardrail-version` output showing `"version": "1"` |
-| `screenshots/guardrail-console-checkpoint.png` | Bedrock console showing the guardrail's content filters, denied topic, PII settings, and published Version 1 |
-| `screenshots/guardrail-iam-policy-attached.png` | `guardrail-policy.json` and the successful `put-role-policy` output (account ID and guardrail ID redacted) |
-| `screenshots/handler-guardrail-wiring.png` | `handler.py` showing the `GUARDRAIL_ID`/`GUARDRAIL_VERSION` constants, `blocked_pii_types()`, and the updated `bedrock.converse()` call |
+| `screenshots/guardrail-console-checkpoint-1.png` | Bedrock console showing the guardrail's content filters, denied topic, PII settings, and published Version 1 |
+| `screenshots/guardrail-console-checkpoint-2.png` | Bedrock console showing the guardrail's content filters, denied topic, PII settings, and published Version 1 |
+| `screenshots/guardrail-console-checkpoint-3.png` | Bedrock console showing the guardrail's content filters, denied topic, PII settings, and published Version 1 |
+| `screenshots/guardrail-console-checkpoint-4.png` | Bedrock console showing the guardrail's content filters, denied topic, PII settings, and published Version 1 |
+| `screenshots/guardrail-iam-policy-attached.png` | `guardrail-policy.json` and the successful `put-role-policy` output |
+| `screenshots/handler-guardrail-wiring-1.png` | `handler.py` showing the `GUARDRAIL_ID`/`GUARDRAIL_VERSION` constants |
+| `screenshots/handler-guardrail-wiring-2.png` | Showing the `blocked_pii_types()` |
+| `screenshots/handler-guardrail-wiring-3.png` | Showing the updated `bedrock.converse()` call |
 | `screenshots/handler-intervention-handling.png` | `handler.py` showing the guardrail intervention block and the PII-specific response message |
 | `screenshots/lambda-deployed-env-vars-set.png` | Successful deploy and `update-function-configuration` output showing all three environment variables set together |
 | `screenshots/test-normal-question-passes.png` | Response for "What is Amazon S3?" showing a normal, unblocked answer |
