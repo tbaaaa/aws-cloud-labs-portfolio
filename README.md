@@ -51,6 +51,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 33 | Prompt Engineering & System Prompts | AICloudFusion Lab 11B | Completed |
 | 34 | Production AI: Token Budgets, Cost Monitoring & Guardrails | AICloudFusion Lab 11C | Completed |
 | 35 | Give Your Chatbot a Brain: RAG | AICloudFusion Lab 12A | Completed |
+| 36 | Responsible AI: Bedrock Guardrails | AICloudFusion Lab 12B | In Progress |
 
 ## Repository Structure
 
@@ -91,4 +92,5 @@ labs/
 ├── 33-prompt-engineering/
 ├── 34-ai-monitoring/
 ├── 35-rag-knowledge-base/
+├── 36-bedrock-guardrails/
 └── ...
