@@ -52,7 +52,7 @@ I am completing beginner-friendly AWS labs to practice cloud fundamentals, AWS s
 | 34 | Production AI: Token Budgets, Cost Monitoring & Guardrails | AICloudFusion Lab 11C | Completed |
 | 35 | Give Your Chatbot a Brain: RAG | AICloudFusion Lab 12A | Completed |
 | 36 | Responsible AI: Bedrock Guardrails | AICloudFusion Lab 12B | Completed |
-| 37 | Capstone: Ship It — Cost Governance & the Full AI Stack | AICloudFusion Lab 12C | In Progress |
+| 37 | Capstone: Ship It — Cost Governance & the Full AI Stack | AICloudFusion Lab 12C | Completed |
 
 ## Repository Structure
 
