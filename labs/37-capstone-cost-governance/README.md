@@ -521,5 +521,4 @@ aws budgets describe-budgets --account-id <YOUR_ACCOUNT_ID> --query "Budgets[?Bu
 | `screenshots/test5-input-validation-400.png` | `400` response for the oversized prompt |
 | `screenshots/test6-happy-path-answer.png` | Response for the S3 explainer question showing a normal grounded answer |
 | `screenshots/alarm-ok-after-tests.png` | `describe-alarms` output showing `ai-chatbot-token-spike` in an `OK` state after the six tests |
-| `screenshots/dashboard-reflecting-test-traffic.png` | CloudWatch dashboard showing invocations, latency, and token metrics from the verification run |
 | `screenshots/teardown-verification-commands.png` | Final verification commands confirming the Lambda function, S3 bucket, guardrail, and budget are all gone |
